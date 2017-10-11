@@ -1,4 +1,4 @@
-terms_by_type = {
+business_terms = {
    'Corporation': ['company', 'incorporated', 'corporation', 'corp.', 'corp', 'inc',
       '& co.', '& co', 'inc.', 's.p.a.', 'n.v.', 'a.g.', 'ag', 'nuf', 's.a.', 's.f.',
       'oao', 'co.', 'co'
@@ -29,18 +29,61 @@ terms_by_type = {
    'Limited Partnership': ['gmbh & co. kg', 'gmbh & co. kg', 'lp', 'l.p.', 's.c.s.',
       's.c.p.a', 'comm.v', 'k.d.', 'k.d.a.', 's. en c.', 'e.e.', 's.a.s.', 's. en c.',
       'c.v.', 's.k.a.', 'sp.k.', 's.cra.', 'ky', 'scs', 'kg', 'kd', 'k/s', 'ee', 'secs',
-      'kda', 'ks', 'kb','kt'
+      'kda', 'ks', 'kb', 'kt'
    ],
    'Mutual Fund': ['sicav'],
    'No Liability': ['nl'],
    'Non-Profit': ['vzw', 'ses.', 'gte.'],
    'Private Company': ['private', 'pte', 'xk'],
-   'Professional Corporation': ['p.c.', 'vof', 'snc'],
+   'Professional Corporation': ['p.c.', 'vof', 'snc', 'pc'],
    'Professional Limited Liability Company': ['pllc', 'p.l.l.c.'],
    'Sole Proprietorship': ['e.u.', 's.p.', 't:mi', 'tmi', 'e.v.', 'e.c.', 'et', 'obrt',
       'fie', 'ij', 'fop', 'xt'
    ]
 }
+
+medical_terms = {
+    'Doctor of Dental Surgery': ['d.d.s.', 'd.d.o.', 'dds', 'ddo'],
+    'Doctor of Medical Dentistry': ['d.m.d.', 'dmd'],
+    'Doctor of Osteopathy': ['d.o.', 'do'],
+    'Doctor of Podiatric Medicine': ['d.p.m.', 'dpm'],
+    'Doctor': ['dr.'],
+    'Fellow of the American Academy of Dermatology': ['f.a.a.d.', 'faad'],
+    'Fellow of the American Academy of Emergency Medicine': ['f.a.a.e.m.', 'faaaem'],
+    'Fellow of the American Academy of Family Physicians': ['f.a.a.f.p.', 'faafp'],
+    'Fellow of the American College of Cardiologists': ['f.a.c.c.', 'facc'],
+    'Fellow of the American College of Endocrinology': ['f.a.c.e.'],
+    'Fellow of the American College of Emergency Physicians': ['f.a.c.e.p.', 'facep'],
+    'Fellow of the American College of Gastroenterology': ['f.a.c.g.', 'facg'],
+    'Fellow of the American College of Foot and Ankle Surgeons': ['f.a.c.f.a.s.', 'facfas'],
+    'Fellow of the American College of Obstetrics and Gynecologists': ['f.a.c.o.g.', 'facog'],
+    'Fellow of the American College of Osteopathic Surgeons': ['f.a.c.o.s.', 'facos'],
+    'Fellow of the American College of Physicians': ['f.a.c.p.', 'facp'],
+    'Fellow of the American College of Chest Physicians': ['f.a.c.c.p.', 'faccp'],
+    'Fellow of the American College of Surgeons': ['f.a.c.s.', 'facs'],
+    'Fellow of the American Society of Podiatric Surgeons': ['f.a.s.p.s.', 'fasps'],
+    'Fellow in Hospital Medicine': ['f.h.m.', 'fhm'],
+    'Fellow of the International College of Surgeons': ['f.i.c.s.', 'fics'],
+    'Fellow of the Society for Cardiovascular Angiography and Interventions': ['f.s.c.a.i.', 'fscai'],
+    'Fellow of the Society of Thoracic Surgeons': ['f.s.t.s.', 'fsts'],
+    'Medical Doctor': ['m.d.', 'md'],
+    'Master of Public Health': ['m.p.h.'],
+    'Nurse Practitioner': ['n.p.', 'np'],
+    'Doctor of Optometry': ['o.d.', 'od'],
+    'Physician Assistant': ['p.a.'],
+    'Doctor of Philosophy': ['ph.d.'],
+    'Registered Nurse': ['r.n.', 'rn']
+}
+
+lawyer_terms = {
+    'Juris Doctor': ['j.d.', 'jd'],
+    'Bachelor of Laws': ['ll.b', 'llb', 'l.l.b.'],
+    'Master of Laws': ['ll.m', 'llm', 'l.l.m.'],
+    'Doctor of Juridical Studies': ['jsd', 'j.s.d.', 'sjd', 's.j.d.'],
+    'Esquire': ['esq', 'esq.']
+}
+
+terms_by_type = {**business_terms, **medical_terms, **lawyer_terms}
 
 terms_by_country = {
    'Albania': ['sh.a.', 'sh.p.k.'],
