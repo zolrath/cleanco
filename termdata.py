@@ -431,6 +431,7 @@ other_terms = {
     'Licensed Independent Social Worker': ['lisw'],
     'Master of Social Work': ['msw', 'mssw', 'msa'],
     'Service': ['service', 'svc'],
+    'Law Offices': ['law offices'],
 }
 
 terms_by_type = {**business_terms, **medical_terms, **lawyer_terms,
