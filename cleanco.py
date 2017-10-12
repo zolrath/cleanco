@@ -5,7 +5,6 @@ import re
 
 from termdata import terms_by_country as country_dict, terms_by_type as type_dict
 
-
 # Sorted business types / abbreviation by length of business type
 sorted_types = []
 for business_type in type_dict:
@@ -29,11 +28,10 @@ all_sorted = sorted_types + sorted_countries
 suffix_sort = []
 for item in all_sorted:
     suffix_sort.append(item[1])
-suffix_sort = sorted(suffix_sort, key=lambda part: len(part), reverse=True)
+suffix_sort = sorted(suffix_sort, key=len, reverse=True)
 
 
 class cleanco(object):
-
     def __init__(self, business_name):
         # always do non-visible cleanup, but store the original just in case
         self.business_name = ' '.join(business_name.split())
@@ -58,7 +56,7 @@ class cleanco(object):
         business_name = self.string_stripper(business_name)
 
         for key, suffix in a_set:
-            if ((business_name.lower()).endswith(" " + suffix)):
+            if (business_name.lower()).endswith(" " + suffix):
                 end_set.append(key)
 
         end_set = list(OrderedDict.fromkeys(end_set))
@@ -87,13 +85,13 @@ class cleanco(object):
                     name = name[0:-end - 1]
                     name = self.string_stripper(name)
                     loname = name.lower()
-                    if multi == False:
+                    if multi is False:
                         break
             if prefix:
                 if loname.startswith(item + ' '):
                     name = name[len(item) + 1:]
                     loname = name.lower()
-                    if multi == False:
+                    if multi is False:
                         break
             if middle:
                 term = ' ' + item + ' '
@@ -102,7 +100,7 @@ class cleanco(object):
                     end = start + len(term)
                     name = name[:start] + " " + name[end:]
                     loname = name.lower()
-                    if multi == False:
+                    if multi is False:
                         break
 
         return self.string_stripper(name)
