@@ -161,8 +161,8 @@ lawyer_terms = {
     'Master of Laws': ['ll.m', 'llm', 'l.l.m.'],
     'Doctor of Juridical Studies': ['jsd', 'j.s.d.', 'sjd', 's.j.d.'],
     'Esquire': ['esq', 'esq.'],
-    'Attourney': ['atty'],
-    'Lawyer': ['lwyr'],
+    'Attorney': ['atty', 'attorney'],
+    'Lawyer': ['lwyr', 'lawyer'],
 }
 
 real_estate_terms = {
