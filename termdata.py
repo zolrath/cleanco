@@ -56,7 +56,7 @@ medical_terms = {
     'Doctor of Medical Dentistry': ['d.m.d.', 'dmd'],
     'Doctor of Osteopathy': ['d.o.', 'do'],
     'Doctor of Podiatric Medicine': ['d.p.m.', 'dpm'],
-    'Doctor': ['dr.'],
+    'Doctor of Medicine': ['dr.', 'dr', 'doctor of medicine'],
     'Fellow of the American Academy of Dermatology': ['f.a.a.d.', 'faad'],
     'Fellow of the American Academy of Emergency Medicine':
     ['f.a.a.e.m.', 'faaaem'],
