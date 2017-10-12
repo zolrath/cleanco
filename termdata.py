@@ -42,12 +42,13 @@ business_terms = {
     'No Liability': ['nl'],
     'Non-Profit': ['vzw', 'ses.', 'gte.'],
     'Private Company': ['private', 'pte', 'xk'],
+    'Professional Association': ['p.a.', 'pa'],
     'Professional Corporation': ['p.c.', 'vof', 'snc', 'pc'],
-    'Professional Limited Liability Company': ['pllc', 'p.l.l.c.'],
+    'Professional Limited Liability Company': ['pllc', 'p.l.l.c.', 'pl', 'p.l.'],
     'Sole Proprietorship': [
         'e.u.', 's.p.', 't:mi', 'tmi', 'e.v.', 'e.c.', 'et', 'obrt', 'fie',
         'ij', 'fop', 'xt'
-    ]
+    ],
 }
 
 medical_terms = {
@@ -151,7 +152,7 @@ medical_terms = {
     ],
     'Occupational Therapist': ['otr', 'otrl', 'otr/l', 'otr l'],
     'Psychiatric-Mental Health Nurse Practitioner': ['pmhnp'],
-    'Pediatric Nurse Practitioner': ['pnp']
+    'Pediatric Nurse Practitioner': ['pnp'],
 }
 
 lawyer_terms = {
@@ -161,7 +162,7 @@ lawyer_terms = {
     'Doctor of Juridical Studies': ['jsd', 'j.s.d.', 'sjd', 's.j.d.'],
     'Esquire': ['esq', 'esq.'],
     'Attourney': ['atty'],
-    'Lawyer': ['lwyr']
+    'Lawyer': ['lwyr'],
 }
 
 real_estate_terms = {
