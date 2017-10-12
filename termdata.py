@@ -219,7 +219,8 @@ other_terms = {
     'Licensed Clinical Social Worker':
     ['lcsw', 'lcsw-c', 'lcswc', 'lcsw-r', 'lcswr', 'lcswacsw'],
     'Licensed Independent Social Worker': ['lisw'],
-    'Master of Social Work': ['msw', 'mssw', 'msa']
+    'Master of Social Work': ['msw', 'mssw', 'msa'],
+    'Service': ['service', 'svc'],
 }
 
 terms_by_type = {**business_terms, **medical_terms, **lawyer_terms,
