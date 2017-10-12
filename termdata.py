@@ -23,7 +23,7 @@ business_terms = {
         'limited', 'bhd.', 'sdn. bhd.', 'sdn bhd', 'as', 'lda.', 'tov', 'pp'
     ],
     'Limited Liability Company': [
-        'pllc', 'llc', 'l.l.c.', 'plc.', 'plc', 'hf.', 'oyj', 'a.e.', 'nyrt.',
+        'pllc', 'p.l.l.c.', 'pl', 'p.l.', 'llc', 'l.l.c.', 'plc.', 'plc', 'hf.', 'oyj', 'a.e.', 'nyrt.',
         'p.l.c.', 'sh.a.', 's.a.', 's.r.l.', 'srl.', 'aat', '3at', 'd.d.',
         's.r.o.', 'spol. s r.o.', 's.m.b.a.', 'smba', 'sarl', 'nv', 'sa',
         'aps', 'a/s', 'p/s', 'sae', 'sasu', 'eurl', 'ae', 'cpt', 'as', 'ab',
@@ -44,7 +44,6 @@ business_terms = {
     'Private Company': ['private', 'pte', 'xk'],
     'Professional Association': ['p.a.', 'pa'],
     'Professional Corporation': ['p.c.', 'vof', 'snc', 'pc'],
-    'Professional Limited Liability Company': ['pllc', 'p.l.l.c.', 'pl', 'p.l.'],
     'Sole Proprietorship': [
         'e.u.', 's.p.', 't:mi', 'tmi', 'e.v.', 'e.c.', 'et', 'obrt', 'fie',
         'ij', 'fop', 'xt'
@@ -53,6 +52,7 @@ business_terms = {
 
 medical_terms = {
     'Doctor of Dental Surgery': ['d.d.s.', 'd.d.o.', 'dds', 'ddo'],
+    'General Denistry': ['general denistry', 'dntst'],
     'Doctor of Medical Dentistry': ['d.m.d.', 'dmd'],
     'Doctor of Osteopathy': ['d.o.', 'do'],
     'Doctor of Podiatric Medicine': ['d.p.m.', 'dpm'],
@@ -161,7 +161,7 @@ lawyer_terms = {
     'Master of Laws': ['ll.m', 'llm', 'l.l.m.'],
     'Doctor of Juridical Studies': ['jsd', 'j.s.d.', 'sjd', 's.j.d.'],
     'Esquire': ['esq', 'esq.'],
-    'Attorney': ['atty', 'attorney'],
+    'Attorney': ['atty', 'attorney', 'attorney at law'],
     'Lawyer': ['lwyr', 'lawyer'],
 }
 
@@ -214,7 +214,7 @@ insurance_terms = {
 }
 
 other_terms = {
-    'Certified Public Accountant': ['c.p.a', 'cpa'],
+    'Certified Public Accountant': ['c.p.a', 'cpa', 'certified public accountant'],
     'Academy of Certified Social Workers': ['a.c.s.w.', 'acsw'],
     'Licensed Clinical Social Worker':
     ['lcsw', 'lcsw-c', 'lcswc', 'lcsw-r', 'lcswr', 'lcswacsw'],
