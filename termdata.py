@@ -68,11 +68,56 @@ medical_terms = {
     'Fellow of the Society of Thoracic Surgeons': ['f.s.t.s.', 'fsts'],
     'Medical Doctor': ['m.d.', 'md'],
     'Master of Public Health': ['m.p.h.'],
-    'Nurse Practitioner': ['n.p.', 'np'],
+    'Nurse Practitioner': ['n.p.', 'np', 'a.r.n.p', 'arnp', 'a.c.n.p', 'acnp', 'a.g.n.p', 'agnp', 'c.f.n.p', 'cfnp'],
     'Doctor of Optometry': ['o.d.', 'od'],
+    'Orthodontist': ['orthdont']
     'Physician Assistant': ['p.a.'],
-    'Doctor of Philosophy': ['ph.d.'],
-    'Registered Nurse': ['r.n.', 'rn']
+    'Doctor of Philosophy': ['dphil', 'ph.d.', 'phd', 'ph d'],
+    'Registered Nurse': ['r.n.', 'rn', 'a.p.r.n.', 'aprn', 'rn cnp', 'rn, cnp', 'rncp'],
+    'Doctor of Psychology': ['psyd', 'psy.d', 'psych'],
+    'Medical Student Life Advisory Committee': ['mslac', 'ms, lac'],
+    'Women''s Health Care Nurse Practitioner': ['whcnp', 'whnp'],
+    'Certified Nurse Midwife': ['c.n.m.', 'cnm'],
+    'Doctor of Audiology': ['a.u.d.', 'aud'],
+    'Doctor of Chiropractic': ['d.c.', 'dc'],
+    'Doctor of Physical Therapy': ['d.p.t.', 'dpt'],
+    'Doctor of Science in Physical Therapy': ['d.s.c.p.t.', 'dscpt'],
+    'Doctor of Science in Nursing': ['d.s.n.', 'dsn'],
+    'Doctor of Veterinary Medicine': ['d.v.m.', 'dvm'],
+    'Ear, Nose and Throat Specialist': ['e.n.t.', 'ent'],
+    'General Practitioner': ['g.p.', 'gp'],
+    'Gynecologist': ['gyn'],
+    'Master of Surgery': ['ms'],
+    'Obstetrician and Gynecologist': ['ob/gyn', 'obgyn', 'ob gyn'],
+    'Doctor of Pharmacy': ['pharmd', 'pharm.d'],
+    'Fellow Faculty of Radiologists': ['ffr'],
+    'Fellow of the Royal College of Physicians and Surgeons of Canada': ['frcpsc'],
+    'Member Royal College of Obstetricians and Gynecologists': ['mrcog'],
+    'Member Royal College of Surgeons': ['mrcs'],
+    'Doctor of Divinity': ['dd'],
+    'Doctor of Education': ['ded', 'edd'],
+    'Doctor of Public Administration': ['dpa'],
+    'Doctor of Public Health': ['dph'],
+    'Fellow Faculty of Public Health Medicine': ['ffphm'],
+    'Doctor of Jurisprudence': ['jd'],
+    'Doctor of Science': ['scd'],
+    'Doctor of Social Science': ['sscd'],
+    'Doctor of Theology': ['thd'],
+    'Certificate of Clinical Competence': ['ccc'],
+    'Fellow of the American College of Obstetricians and Gynecologists': ['facog'],
+    'Family Nurse Practitioner': ['fncp'],
+    'Licensed Clinical Professional Counselor': ['lcpc', 'lpc'],
+    'Licensed Marriage and Family Therapist': ['lmft'],
+    'Marriage, Family and Child Counselor': ['mfcc'],
+    'Marriage and Family Therapists': ['mft'],
+    'Medical Student Life Advisory Committee': ['mslac'],
+    'Licensed Mental Health Counselor': ['lmhc', 'lcmhc', 'cmhc'],
+    'Licensed Mental Health Professional': ['lmhp'],
+    'Licensed Professional Clinical Counselor': ['lpcc'],
+    'Bachelor of Medicine': ['mbbs', 'mbchb', 'mbbch', 'mb bchir', 'bm bch', 'bmbs']
+    'Occupational Therapist': ['otr', 'otrl', 'otr/l', 'otr l'],
+    'Psychiatric-Mental Health Nurse Practitioner': ['pmhnp'],
+    'Pediatric Nurse Practitioner': ['pnp'],
 }
 
 lawyer_terms = {
@@ -80,10 +125,20 @@ lawyer_terms = {
     'Bachelor of Laws': ['ll.b', 'llb', 'l.l.b.'],
     'Master of Laws': ['ll.m', 'llm', 'l.l.m.'],
     'Doctor of Juridical Studies': ['jsd', 'j.s.d.', 'sjd', 's.j.d.'],
-    'Esquire': ['esq', 'esq.']
+    'Esquire': ['esq', 'esq.'],
+    'Attourney': ['atty'],
+    'Lawyer': ['lwyr'],
 }
 
-terms_by_type = {**business_terms, **medical_terms, **lawyer_terms}
+other_terms = {
+    'Certified Public Accountant': ['c.p.a', 'cpa'],
+    'Academy of Certified Social Workers': ['a.c.s.w.', 'acsw'],
+    'Licensed Clinical Social Worker': ['lcsw', 'lcsw-c', 'lcswc', 'lcsw-r', 'lcswr', 'lcswacsw'],
+    'Licensed Independent Social Worker': ['lisw'],
+    'Master of Social Work': ['msw', 'mssw', 'msa'],
+}
+
+terms_by_type = {**business_terms, **medical_terms, **lawyer_terms, **other_terms}
 
 terms_by_country = {
    'Albania': ['sh.a.', 'sh.p.k.'],
